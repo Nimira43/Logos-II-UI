@@ -1,0 +1,85 @@
+{
+  "ideas": [
+    {
+      "id": "1",
+      "title": "Neighbourhood Repair Exchange",
+      "summary": "A community-driven platform for sharing repair skills locally.",
+      "description": "A service that connects residents with neighbours who can repair household items such as bicycles, electronics, clothing, and furniture. The platform promotes sustainability, reduces waste, and encourages local skill-sharing through transparent listings and secure bookings.",
+      "tags": ["community", "sustainability", "local"],
+      "createdAt": "2026-05-14T10:20:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Seasonal Recipe Companion",
+      "summary": "A cooking assistant based on seasonal produce.",
+      "description": "An app that recommends recipes using ingredients currently in season in places around the world. Users can browse dishes, generate shopping lists, and learn about regional farming. The system encourages sustainable eating habits and reduces food waste.",
+      "tags": ["food", "seasonal", "lifestyle"],
+      "createdAt": "2026-04-22T09:15:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Freelancer Compliance Toolkit",
+      "summary": "A lightweight tool for managing freelance obligations.",
+      "description": "A platform that helps freelancers track expenses, generate invoices, and stay compliant with local tax regulations. Features include automated reminders for deadlines, mileage tracking, and simple year-end summaries suitable for sole traders.",
+      "tags": ["freelance", "saas", "productivity"],
+      "createdAt": "2026-06-02T14:40:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "Smart Outfit Planner",
+      "summary": "A digital wardrobe with weather-aware outfit suggestions.",
+      "description": "An application that allows users to catalogue their clothing and receive outfit recommendations based on weather forecasts, planned events, and personal style preferences. Includes packing lists, colour-matching tools, and usage analytics.",
+      "tags": ["fashion", "ai", "lifestyle"],
+      "createdAt": "2026-05-29T18:12:00.000Z"
+    },
+    {
+      "id": "5",
+      "title": "Trusted Pet Minder Network",
+      "summary": "A verified marketplace for pet care services.",
+      "description": "A platform connecting pet owners with vetted carers offering sitting, boarding, and walking services. Carers undergo identity checks, and the platform includes secure messaging, booking management, and transparent reviews.",
+      "tags": ["pets", "marketplace", "local"],
+      "createdAt": "2026-06-11T11:05:00.000Z"
+    },
+    {
+      "id": "6",
+      "title": "Remote Role Navigator",
+      "summary": "AI-powered recommendations for remote-friendly jobs.",
+      "description": "A service that analyses a user's CV, skills, and work history to match them with suitable remote roles. The system adapts to user preferences over time and includes filters for specific requirements such as right-to-work and salary expectations.",
+      "tags": ["jobs", "ai", "remote"],
+      "createdAt": "2026-06-18T16:30:00.000Z"
+    },
+    {
+      "id": "7",
+      "title": "Local Shop Showcase",
+      "summary": "A digital storefront for independent high street retailers.",
+      "description": "A platform enabling small retailers to list products online without needing a full e-commerce site. Customers can browse local shops, reserve items, and arrange collection or local delivery. Designed to support high street visibility and resilience.",
+      "tags": ["retail", "local", "marketplace"],
+      "createdAt": "2026-05-25T13:48:00.000Z"
+    },
+    {
+      "id": "8",
+      "title": "Rainy Day Activity Finder",
+      "summary": "Indoor activity suggestions based on location.",
+      "description": "A location-aware app that recommends indoor activities when poor weather is forecast. Options include museums, cafés, leisure centres, exhibitions, and family-friendly venues. Integrates pricing, availability, and travel information.",
+      "tags": ["lifestyle", "weather", "local"],
+      "createdAt": "2026-06-07T08:55:00.000Z"
+    },
+    {
+      "id": "9",
+      "title": "Beginner Allotment Guide",
+      "summary": "A gardening assistant tailored to various climates.",
+      "description": "A mobile app offering guidance for new gardeners, including planting schedules, care instructions, and troubleshooting based on regional climate data. Features include plant identification, reminders, and advice on common gardening challenges.",
+      "tags": ["gardening", "education", "lifestyle"],
+      "createdAt": "2026-04-30T10:10:00.000Z"
+    },
+    {
+      "id": "10",
+      "title": "City Walk Audio Explorer",
+      "summary": "Self-guided walking tours narrated by local experts.",
+      "description": "A platform offering downloadable audio tours for towns and cities across the UK. Narration is provided by local historians and guides. Each tour includes maps, points of interest, historical context, and optional recommendations for nearby amenities.",
+      "tags": ["travel", "culture", "local"],
+      "createdAt": "2026-05-19T12:22:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
