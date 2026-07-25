@@ -29,7 +29,7 @@ function IdeasPage() {
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         {ideas.map((idea) => (
           <IdeaCard
-            key={idea.id}
+            key={idea._id}
             idea={idea}
           />          
         ))}

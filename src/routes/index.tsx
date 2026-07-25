@@ -52,7 +52,7 @@ function Home() {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
           {latestIdeas.map((idea) => (
             <IdeaCard
-              key={idea.id}
+              key={idea._id}
               idea={idea}
               button={false}      
             />
