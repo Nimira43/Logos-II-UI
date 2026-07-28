@@ -3,34 +3,19 @@ import { queryOptions, useSuspenseQuery } from '@tanstack/react-query'
 import { fetchIdeas } from '@/api/ideas'
 import IdeaCard from '@/components/IdeaCard'
 
-const latestIdeasQueryOptions = () =>
-  queryOptions({
-    queryKey: ['latest-ideas'],
-    queryFn: async () => {
-      const ideas = await fetchIdeas()
-
-      return ideas
-        .sort(
-          (a, b) =>
-            new Date(b.createdAt).getTime() -
-            new Date(a.createdAt).getTime()
-        )
-        .slice(0, 4) 
-    }
-  })
+const ideasQueryOptions = queryOptions({
+  queryKey: ['ideas', {limit: 3}],
+  queryFn: () => fetchIdeas(3),
+})
 
 export const Route = createFileRoute('/')({
-  head: () => ({
-    meta: [{ title: 'Logos II Hub - Home' }]
-  }),
-  loader: async ({ context: { queryClient } }) => {
-    return queryClient.ensureQueryData(latestIdeasQueryOptions())
-  },
-  component: Home
+  component: Home,
+  loader: ({ context }) =>
+    context.queryClient.ensureQueryData(ideasQueryOptions)
 })
 
 function Home() {
-  const { data: latestIdeas } = useSuspenseQuery(latestIdeasQueryOptions())
+  const { data: ideas } = useSuspenseQuery(ideasQueryOptions)
 
   return (
     <div className='p-6 max-w-4xl mx-auto'>
@@ -50,7 +35,7 @@ function Home() {
         </h2>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
-          {latestIdeas.map((idea) => (
+          {ideas.map((idea) => (
             <IdeaCard
               key={idea._id}
               idea={idea}
