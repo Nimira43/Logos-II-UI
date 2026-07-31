@@ -15,7 +15,7 @@ const IdeaCard = ({
   })  
   
   return (  
-    <div className='border border-amber-300 p-4 rounded shadow-md bg-white flex flex-col justify-between'>
+    <div className='border border-amber-300 p-4 rounded shadow bg-white flex flex-col justify-between'>
       <div>
         <h2 className='text-lg font-medium text-amber-600'>
           {idea.title}
